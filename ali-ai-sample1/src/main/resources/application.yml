@@ -1,18 +1,14 @@
 server:
     port: 8081
     context-path: /ai
+
 spring:
     application:
         name: ai
     ai:
         openai:
-            api-key: sssddd
-            base-url: https://api.deepseek.com/v1
+            api-key: ${OPENAI_API_KEY}
+            base-url: https://dashscope.aliyuncs.com/compatible-mode
             chat:
                 options:
-                    model: deepseek-chat
-        mcp:
-            client:
-                enabled: true
-                name: spring-ai-mcp-client
-                type: ASYNC
+                    model: qwen-plus
