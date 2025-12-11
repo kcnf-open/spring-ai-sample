@@ -18,4 +18,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>24</java.version>
     </properties>
+
+    <modules>
+        <module>ali-ai-sample1</module>
+    </modules>
 </project>
