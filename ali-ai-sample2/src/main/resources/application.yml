@@ -1,0 +1,23 @@
+server:
+    port: 8081
+    context-path: /ai
+
+spring:
+    application:
+        name: ai
+    ai:
+        openai:
+            api-key: ${OPENAI_API_KEY}
+            base-url: https://dashscope.aliyuncs.com/compatible-mode
+            chat:
+                options:
+                    model: qwen-plus
+        vectorstore:
+            redis:
+                initialize-schema: true
+                index-name: vectorstore
+                prefix: 'kcnf:'
+    data:
+        redis:
+            host: 192.168.0.102
+            port: 6379

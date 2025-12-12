@@ -30,6 +30,7 @@
 
     <modules>
         <module>ali-ai-sample1</module>
+        <module>ali-ai-sample2</module>
     </modules>
 
     <dependencies>
