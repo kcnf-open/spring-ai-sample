@@ -31,6 +31,7 @@
     <modules>
         <module>ali-ai-sample1</module>
         <module>ali-ai-sample2</module>
+        <module>ali-ai-deepseek1</module>
     </modules>
 
     <dependencies>
@@ -38,6 +39,15 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.42</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
