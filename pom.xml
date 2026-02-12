@@ -29,9 +29,8 @@
     </properties>
 
     <modules>
-        <module>ali-ai-sample1</module>
-        <module>ali-ai-sample2</module>
-        <module>ali-ai-deepseek1</module>
+        <module>ali-ai</module>
+        <module>spring-ai</module>
     </modules>
 
     <dependencies>
@@ -56,7 +55,7 @@
             <dependency>
                 <groupId>org.springframework.ai</groupId>
                 <artifactId>spring-ai-bom</artifactId>
-                <version>1.0.0</version>
+                <version>1.1.2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -75,6 +74,11 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
                 <configuration>
@@ -83,6 +87,11 @@
                     <release>24</release> <!-- JDK 9+ 推荐使用 release -->
                     <encoding>UTF-8</encoding>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M7</version>   <!-- 最后一个兼容 Maven 3.x 的版本，后续版本需 3.6.3+ -->
             </plugin>
         </plugins>
     </build>

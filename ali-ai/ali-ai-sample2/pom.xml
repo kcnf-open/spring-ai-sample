@@ -7,7 +7,7 @@
     <!-- 父项目依赖 -->
     <parent>
         <groupId>com.kcnf</groupId>
-        <artifactId>spring-ali-ai</artifactId>
+        <artifactId>ali-ai</artifactId>
         <version>v1</version>
     </parent>
 
