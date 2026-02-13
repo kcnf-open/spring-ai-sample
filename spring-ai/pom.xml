@@ -18,6 +18,7 @@
         <module>spring-ai-deepseek1</module>
         <module>spring-ai-zhipu</module>
         <module>spring-ai-rag</module>
+        <module>spring-ai-mcp</module>
     </modules>
 
 

@@ -1,0 +1,18 @@
+server:
+    port: 8082
+    context-path: /
+
+spring:
+    application:
+        name: ai
+    ai:
+        mcp:
+            enable: true
+            name: mcp
+            type: ASYNC
+            sse:
+                connections:
+                    server: http://localhost:8080/sse
+                    sse-endpoint: /sse
+                stdio:
+                    server-configuration: http://localhost:8080/stdio
