@@ -17,6 +17,20 @@
     <modules>
         <module>ali-ai-sample1</module>
         <module>ali-ai-sample2</module>
+        <module>ali-sample1</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-agent-framework</artifactId>
+            <version>1.1.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud.ai</groupId>
+            <artifactId>spring-ai-alibaba-starter-dashscope</artifactId>
+            <version>1.1.2.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
