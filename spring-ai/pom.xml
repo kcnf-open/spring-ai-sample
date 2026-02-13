@@ -16,6 +16,7 @@
 
     <modules>
         <module>spring-ai-deepseek1</module>
+        <module>spring-ai-zhipu</module>
     </modules>
 
 
