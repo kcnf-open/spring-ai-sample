@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.kcnf</groupId>
-    <artifactId>spring-ali-ai</artifactId>
+    <artifactId>spring-ai-sample</artifactId>
     <version>v1</version>
     <packaging>pom</packaging>
 

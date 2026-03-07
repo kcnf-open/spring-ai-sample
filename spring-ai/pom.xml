@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.kcnf</groupId>
-        <artifactId>spring-ali-ai</artifactId>
+        <artifactId>spring-ai-sample</artifactId>
         <version>v1</version>
     </parent>
 
