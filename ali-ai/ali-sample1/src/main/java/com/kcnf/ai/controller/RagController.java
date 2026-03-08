@@ -24,7 +24,7 @@ public class RagController {
 
     @PostMapping("/uploadRagDoc")
     public List<Document> uploadRagDoc(@RequestParam("file") MultipartFile file ){
-        List<Document> documentList =  documentService.loadText(file.getResource(), file.getOriginalFilename());
-        return documentList;
+//        List<Document> documentList =  documentService.loadText(file.getResource(), file.getOriginalFilename());
+        return null;
     }
 }
