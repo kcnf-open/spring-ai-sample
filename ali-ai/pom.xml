@@ -15,9 +15,9 @@
 
 
     <modules>
+        <module>ali-ai-sample0</module>
         <module>ali-ai-sample1</module>
         <module>ali-ai-sample2</module>
-        <module>ali-sample1</module>
     </modules>
 
     <dependencies>

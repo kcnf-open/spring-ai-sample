@@ -9,7 +9,7 @@
         <version>v1</version>
     </parent>
 
-    <artifactId>ali-sample1</artifactId>
+    <artifactId>ali-ai-sample0</artifactId>
 
     <build>
         <plugins>
