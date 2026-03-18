@@ -7,9 +7,11 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>file:/data/kcnf/ali-ai.properties</value>
+                <value>file:/data/kcnf/spring-ai.properties</value>
             </list>
         </property>
         <property name="ignoreUnresolvablePlaceholders" value="true" />
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_FALLBACK" />
+        <property name="searchSystemEnvironment" value="true" />
     </bean>
 </beans>
