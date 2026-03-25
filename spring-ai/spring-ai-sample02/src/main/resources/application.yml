@@ -2,11 +2,8 @@ server:
     port: 8082
     context-path: /
 
+# In application.yml
 spring:
     ai:
-        openai:
-            api-key: ${DEEPSEEK_API_KEY}
-            base-url: https://api.openai-proxy.org
-            chat:
-                options:
-                    model: gpt-3.5-turbo
+        zhipuai:
+            api-key: ${ZHIPUAI_API_KEY}
