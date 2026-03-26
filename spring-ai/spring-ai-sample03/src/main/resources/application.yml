@@ -1,0 +1,9 @@
+server:
+    port: 8082
+    context-path: /
+
+# In application.yml
+spring:
+    ai:
+        zhipuai:
+            api-key: ${ZHIPUAI_API_KEY}
