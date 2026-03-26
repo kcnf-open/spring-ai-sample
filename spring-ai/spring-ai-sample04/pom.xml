@@ -5,21 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.kcnf</groupId>
-        <artifactId>spring-ai-sample</artifactId>
+        <artifactId>spring-ai</artifactId>
         <version>v1</version>
     </parent>
 
-    <artifactId>spring-ai</artifactId>
-    <name>spring-ai</name>
-    <packaging>pom</packaging>
-    <version>v1</version>
+    <artifactId>spring-ai-sample04</artifactId>
 
-    <modules>
-        <module>spring-ai-sample01</module>
-        <module>spring-ai-sample02</module>
-        <module>spring-ai-sample03</module>
-        <module>spring-ai-sample04</module>
-    </modules>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-model-zhipuai</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
