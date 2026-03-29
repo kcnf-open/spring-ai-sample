@@ -7,3 +7,6 @@ spring:
     ai:
         zhipuai:
             api-key: ${ZHIPUAI_API_KEY}
+            chat:
+                options:
+                    model: glm-4v-flash
