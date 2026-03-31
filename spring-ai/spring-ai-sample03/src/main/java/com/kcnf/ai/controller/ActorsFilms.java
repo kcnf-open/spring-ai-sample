@@ -1,4 +1,4 @@
-package com.kcnf.ai.prompt;
+package com.kcnf.ai.controller;
 
 import lombok.Getter;
 import lombok.Setter;

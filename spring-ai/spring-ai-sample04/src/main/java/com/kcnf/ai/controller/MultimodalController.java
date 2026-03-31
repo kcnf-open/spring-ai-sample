@@ -1,4 +1,4 @@
-package com.kcnf.ai.prompt;
+package com.kcnf.ai.controller;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.messages.UserMessage;
