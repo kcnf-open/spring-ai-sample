@@ -1,0 +1,28 @@
+server:
+    port: 8082
+    context-path: /
+
+# In application.yml
+spring:
+    ai:
+        zhipuai:
+            api-key: ${ZHIPUAI_API_KEY}
+            chat:
+                options:
+                    model: glm-4v-flash
+            embedding:
+                options:
+                    model: embedding-3   # 嵌入模型
+            image:
+                options:
+                    model: CogView-3-Flash  # 图像生成模型
+
+    datasource:
+        url: jdbc:h2:file:./data/chat_memory
+        username: sa
+        password:
+        driver-class-name: org.h2.Driver
+    h2:
+        console:
+            enabled: true
+            path: /h2-console
