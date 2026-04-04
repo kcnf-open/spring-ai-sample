@@ -1,0 +1,9 @@
+2026-04-04 14:07:06.028212+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "SPRING_AI_CHAT_MEMORY" not found; SQL statement:
+SELECT content, type FROM SPRING_AI_CHAT_MEMORY WHERE conversation_id = ? ORDER BY timestamp ASC [42102-232]
+2026-04-04 14:17:17.629004+08:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]SPRING_AI_CHAT_MEMORY"; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+SPRING_AI_CHAT_MEMORY [42001-232]
+2026-04-04 14:17:18.531790+08:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]SPRING_AI_CHAT_MEMORY"; expected "SAVEPOINT, SCRIPT, SHUTDOWN"; SQL statement:
+SPRING_AI_CHAT_MEMORY [42001-232]

@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS SPRING_AI_CHAT_MEMORY (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    content TEXT,
+    type VARCHAR(255),
+    timestamp TIMESTAMP,
+    conversation_id VARCHAR(255)
+);
