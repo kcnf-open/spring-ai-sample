@@ -49,4 +49,4 @@ CREATE INDEX idx_news_date ON news(date) [42111-232]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.kcnf.ai.Sample09DemoApp.main(Sample09DemoApp.java:11)
+	at com.kcnf.ai.SampleMcpServer.main(Sample09DemoApp.java:11)

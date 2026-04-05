@@ -24,6 +24,7 @@
         <module>spring-ai-sample07</module>
         <module>spring-ai-sample08</module>
         <module>spring-ai-sample09</module>
+        <module>spring-ai-sample10-mcp-server</module>
     </modules>
 
 
