@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "music-planet": {
+      "command": "java",
+      "args": [
+        "-Dstdout.disabled=true",
+        "-Dlogging.pattern.console=",
+        "-Dspring.main.banner-mode=off",
+        "-jar",
+        "E:/mywork/kcnf-open/spring-ai-sample/spring-ai/spring-ai-sample10-mcp-server/target/spring-ai-sample10-mcp-server-v1.jar"
+      ]
+    }
+  }
+}
