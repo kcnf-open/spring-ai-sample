@@ -20,8 +20,8 @@ spring:
                             args:
                                 - "-Dfile.encoding=UTF-8"
                                 - "-jar"
-                                - "E:/mywork/kcnf-open/spring-ai-sample/spring-ai/spring-ai-sample10-mcp-server/target/spring-ai-sample10-mcp-server-v1.jar"
-                            working-directory: "E:/mywork/kcnf-open/spring-ai-sample/spring-ai/spring-ai-sample10-mcp-server"
+                                - "E:\\mywork\\kcnf-open\\spring-ai-sample\\spring-ai\\spring-ai-sample10-mcp-server\\target\\spring-ai-sample10-mcp-server-v1.jar"
+                            working-directory: "E:\\mywork\\kcnf-open\\spring-ai-sample\\spring-ai\\spring-ai-sample10-mcp-server\\target"
 
 logging:
     level:

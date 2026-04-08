@@ -12,6 +12,8 @@ spring:
                 version: 1.0.0
 
 logging:
+    pattern:
+        console:
     level:
         root: WARN
         com.kcnf.ai: INFO

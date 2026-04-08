@@ -155,11 +155,6 @@ public class McpToolService {
 
             if (tools == null || tools.length == 0) {
                 log.error("[严重错误] MCP Server 没有返回任何工具（已重试 {} 次）！", maxRetries);
-                log.error("[可能原因1] MCP Server 进程未成功启动");
-                log.error("[可能原因2] MCP Server 启动失败，请检查 server 端日志");
-                log.error("[可能原因3] STDIO 连接失败，请检查 application.yml 中的配置");
-                log.error("[可能原因4] MCP Server JAR 文件路径不正确或文件损坏");
-                log.error("[调试建议] 查看日志文件: E:/mywork/kcnf-open/spring-ai-sample/spring-ai/spring-ai-sample10-mcp-server/logs/mcp-server.log");
 
                 throw new IllegalStateException(
                         "MCP Server 未就绪，可用工具数量为 0。" +

@@ -10,17 +10,10 @@ import org.springframework.context.annotation.Configuration;
 public class McpConfig {
 
     @Bean
-    public MyServerTools myTools() {
-        return new MyServerTools();
-    }
-
-    @Bean
     public ToolCallbackProvider myToolsProvider(MyServerTools myTools) {
         return MethodToolCallbackProvider.builder()
                 .toolObjects(myTools)
                 .build();
     }
-
-
 
 }
