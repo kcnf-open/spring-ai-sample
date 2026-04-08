@@ -1,6 +1,5 @@
 server:
     port: 8082
-    context-path: /
 
 
 spring:
@@ -12,19 +11,21 @@ spring:
                     model: glm-4-plus
         mcp:
             client:
-                # 通用客户端配置
-                enabled: true                # 是否启用 MCP 客户端，默认为 true
-                name: my-mcp-client          # 客户端名称
-                version: 1.0.0               # 客户端版本
-                type: SYNC                   # 客户端类型，可选 SYNC 或 ASYNC
-                request-timeout: 30s         # 请求超时时间，默认为 20s
-                # stdio 传输配置
+                enabled: true
+                request-timeout: 30s
                 stdio:
-                    # 方式二：引用外部JSON文件（Claude Desktop风格）
-                    servers-configuration: classpath:mcp-servers.json
+                    servers:
+                        mcp-server:
+                            command: java
+                            args:
+                                - "-Dfile.encoding=UTF-8"
+                                - "-jar"
+                                - "E:/mywork/kcnf-open/spring-ai-sample/spring-ai/spring-ai-sample10-mcp-server/target/spring-ai-sample10-mcp-server-v1.jar"
+                            working-directory: "E:/mywork/kcnf-open/spring-ai-sample/spring-ai/spring-ai-sample10-mcp-server"
 
 logging:
     level:
-        root: INFO
+        root: WARN
+        com.kcnf.ai: INFO
         org.springframework.ai.mcp: DEBUG
-        com.kcnf.ai: DEBUG
+        io.modelcontextprotocol: DEBUG
