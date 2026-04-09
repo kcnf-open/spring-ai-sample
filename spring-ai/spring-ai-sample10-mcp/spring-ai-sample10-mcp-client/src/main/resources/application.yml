@@ -11,19 +11,25 @@ spring:
                     model: glm-4-plus
         mcp:
             client:
+                #启用/禁用MCP客户端
                 enabled: true
-                # 连接配置
-                connection:
-                    # Server 端 HTTP 地址
-                    url: http://localhost:8083/mcp
-                    # 传输协议
-                    transport: STREAMABLE_HTTP
-                    type: SYNC
+                # 传输协议
+                transport: STREAMABLE_HTTP
+                # 客户端类型（SYNC 或 ASYNC）。所有客户端必须是SYNC或ASYNC之一；不支持混合使用
+                type: SYNC
                 # 添加初始化超时配置
                 initialization-timeout: 30s
                 # 启用工具发现日志
                 request-timeout: 60s
-
+                # 连接配置
+                streamable-http:
+                    connections:
+                        # Server 端 HTTP 地址
+                        weather-server:
+                            url:  http://localhost:8083/mcp
+#                        server2:
+#                            url: http://otherserver:8081
+#                            endpoint: /custom-sse
 # 启用详细日志
 logging:
     level:
