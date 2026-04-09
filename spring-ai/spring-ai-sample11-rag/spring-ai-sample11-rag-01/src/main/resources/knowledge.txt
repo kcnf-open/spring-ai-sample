@@ -1,0 +1,3 @@
+Spring AI 是 Spring 生态系统中用于构建 AI 应用的项目。
+它提供了一套与 AI 模型交互的抽象，目前支持聊天、文本到图像、语音转录等功能。
+Spring AI 的 1.1.3 版本带来了许多新特性，例如对 Anthropic Claude Skills API 的支持。
