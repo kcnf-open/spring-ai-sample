@@ -1,21 +1,21 @@
+server:
+    port: 8083
+
 spring:
-    main:
-        # 关键：关闭 Web 服务器环境，MCP Server 不需要 Web 功能
-        web-application-type: none
-        banner-mode: off
+    application:
+        name: mcp-server-demo
     ai:
         mcp:
             server:
-                # 启用 STDIO 传输模式，用于本地进程间通信
-                stdio: true
-                name: my-mcp-server
-                version: 1.0.0
-
-logging:
-    pattern:
-        console:
-    level:
-        root: WARN
-        com.kcnf.ai: INFO
-    file:
-        name: logs/mcp-server.log
+                enabled: true
+                name: "mcp-server-demo"
+                version: "1.0.0"
+                # 关键配置：启用 Streamable HTTP 传输
+                protocol: STREAMABLE
+                # Streamable HTTP 端点（默认 /mcp）
+                streamable-http:
+                    mcp-endpoint: /mcp
+                capabilities:
+                    tool: true
+                    resource: false
+                    prompt: false

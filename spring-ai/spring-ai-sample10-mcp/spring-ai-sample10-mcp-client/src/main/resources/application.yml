@@ -1,8 +1,8 @@
 server:
     port: 8082
-
-
 spring:
+    application:
+        name: mcp-client-demo
     ai:
         zhipuai:
             api-key: ${ZHIPUAI_API_KEY}
@@ -12,20 +12,20 @@ spring:
         mcp:
             client:
                 enabled: true
-                request-timeout: 30s
-                stdio:
-                    servers:
-                        mcp-server:
-                            command: java
-                            args:
-                                - "-Dfile.encoding=UTF-8"
-                                - "-jar"
-                                - "E:\\mywork\\kcnf-open\\spring-ai-sample\\spring-ai\\spring-ai-sample10-mcp-server\\target\\spring-ai-sample10-mcp-server-v1.jar"
-                            working-directory: "E:\\mywork\\kcnf-open\\spring-ai-sample\\spring-ai\\spring-ai-sample10-mcp-server\\target"
+                # 连接配置
+                connection:
+                    # Server 端 HTTP 地址
+                    url: http://localhost:8083/mcp
+                    # 传输协议
+                    transport: STREAMABLE_HTTP
+                    type: SYNC
+                # 添加初始化超时配置
+                initialization-timeout: 30s
+                # 启用工具发现日志
+                request-timeout: 60s
 
+# 启用详细日志
 logging:
     level:
-        root: WARN
-        com.kcnf.ai: INFO
         org.springframework.ai.mcp: DEBUG
         io.modelcontextprotocol: DEBUG

@@ -5,9 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class McpDemoApplication {
+public class McpStdioServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(McpDemoApplication.class, args);
+        SpringApplication.run(McpStdioServerApplication.class, args);
     }
 }
