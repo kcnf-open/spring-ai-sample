@@ -1,0 +1,16 @@
+server:
+    port: 8082
+    context-path: /
+
+# In application.yml
+spring:
+    ai:
+        zhipuai:
+            api-key: ${ZHIPUAI_API_KEY}
+            chat:
+                options:
+                    model: glm-4-plus
+logging:
+    level:
+        # 查看 Spring AI 内部流程（例如分块、嵌入请求、检索语句等）
+        org.springframework.ai: DEBUG

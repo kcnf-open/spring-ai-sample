@@ -13,5 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-ai-sample11-rag-01</module>
+        <module>spring-ai-sample11-rag-02-etl</module>
     </modules>
 </project>
