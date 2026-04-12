@@ -6,5 +6,9 @@ spring:
     application:
         name: ai
     ai:
-        dashscope:
-            api-key: sk-3d
+        openai:
+            api-key: ${OPENAI_API_KEY}
+            base-url: https://dashscope.aliyuncs.com/compatible-mode
+            chat:
+                options:
+                    model: qwen3.6-plus-2026-04-02

@@ -1,0 +1,10 @@
+server:
+    port: 8081
+    context-path: /ai
+
+spring:
+    application:
+        name: ai
+    ai:
+        dashscope:
+            api-key: ${OPENAI_API_KEY}
