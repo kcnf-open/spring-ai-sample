@@ -2,6 +2,7 @@ package com.kcnf.ai.controller;
 
 
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,12 +11,10 @@ import reactor.core.publisher.Flux;
 @RestController
 public class ChatController {
 
-    private final ChatClient chatClient;
+    @Autowired
+    private ChatClient chatClient;
 
-    // 通过构造器注入 ChatClient
-    public ChatController(ChatClient.Builder chatClientBuilder) {
-        this.chatClient = chatClientBuilder.build();
-    }
+
 
     // 1. 普通同步调用
     @GetMapping("/ai/chat")

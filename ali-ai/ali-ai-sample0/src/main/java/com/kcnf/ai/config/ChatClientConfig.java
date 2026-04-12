@@ -17,7 +17,7 @@ public class ChatClientConfig {
     public ChatClient chatClient(DashScopeChatModel chatModel) {
         return ChatClient.builder(chatModel)
                 // 设置默认系统提示词，定义 AI 的基础人设
-                .defaultSystem("你是一个专业、友好的AI助手，请用中文回答问题。")
+                .defaultSystem("你是一个专业新闻播报助手，请用中文回答问题。")
                 // 设置默认选项（可选）
                 .defaultOptions(ChatOptions.builder()
                         .temperature(0.7)   // 温度：控制回答的随机性，0=确定，1=创造性高
