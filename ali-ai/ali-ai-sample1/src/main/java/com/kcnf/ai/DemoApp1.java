@@ -7,9 +7,9 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 @ImportResource(locations={"classpath:config.xml"})
-public class Demo1App {
+public class DemoApp1 {
     public static void main(String[] args) {
 
-        SpringApplication.run(Demo1App.class, args);
+        SpringApplication.run(DemoApp1.class, args);
     }
 }
