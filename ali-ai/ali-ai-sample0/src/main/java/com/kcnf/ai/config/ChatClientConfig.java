@@ -15,14 +15,12 @@ public class ChatClientConfig {
      */
     @Bean
     public ChatClient chatClient(DashScopeChatModel chatModel) {
+        ChatOptions chatOptions =  ChatOptions.builder().temperature(0.9).build();
         return ChatClient.builder(chatModel)
                 // 设置默认系统提示词，定义 AI 的基础人设
                 .defaultSystem("你是一个专业新闻播报助手，请用中文回答问题。")
                 // 设置默认选项（可选）
-                .defaultOptions(ChatOptions.builder()
-                        .temperature(0.7)   // 温度：控制回答的随机性，0=确定，1=创造性高
-                        .topP(0.9)          // 核采样：控制词汇选择的多样性
-                        .build())
+                .defaultOptions(chatOptions)
                 .build();
     }
 
@@ -31,6 +29,7 @@ public class ChatClientConfig {
      */
     @Bean
     public ChatClient.Builder chatClientBuilder(DashScopeChatModel chatModel) {
+
         return ChatClient.builder(chatModel);
     }
 }

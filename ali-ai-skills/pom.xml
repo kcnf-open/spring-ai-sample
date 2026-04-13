@@ -9,34 +9,11 @@
         <version>v1</version>
     </parent>
 
-    <artifactId>ali-ai</artifactId>
-    <version>v1</version>
+    <artifactId>ali-ai-skills</artifactId>
     <packaging>pom</packaging>
-
-
-
     <modules>
-        <module>ali-ai-sample0</module>
-        <module>ali-ai-sample1</module>
-        <module>ali-ai-sample2</module>
+        <module>ali-ai-skills-01</module>
     </modules>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.17.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>4.12.0</version>
-        </dependency>
-    </dependencies>
 
 
     <dependencyManagement>
@@ -56,10 +33,21 @@
                 <scope>import</scope>
             </dependency>
 
-
-
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>2.0.0-M4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-dependencies</artifactId>-->
+<!--                <version>4.0.2</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
-
 
 </project>

@@ -33,6 +33,12 @@
             </modules>
         </profile>
         <profile>
+            <id>ali-ai-skills</id>
+            <modules>
+                <module>ali-ai-skills</module>
+            </modules>
+        </profile>
+        <profile>
             <id>spring-ai</id>
             <modules>
                 <module>spring-ai</module>
