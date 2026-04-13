@@ -1,0 +1,17 @@
+server:
+  port: 8082
+  context-path: /
+
+# In application.yml
+spring:
+  ai:
+    zhipuai:
+      api-key: ${ZHIPUAI_API_KEY}
+
+# 可选：技能根路径配置（默认为 classpath:skills）
+skills:
+  root-path: classpath:skills
+
+logging:
+  level:
+    org.springframework.ai: DEBUG

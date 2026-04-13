@@ -38,6 +38,12 @@
                 <module>spring-ai</module>
             </modules>
         </profile>
+        <profile>
+            <id>spring-ai-skills</id>
+            <modules>
+                <module>spring-ai-skills</module>
+            </modules>
+        </profile>
     </profiles>
 
     <dependencies>

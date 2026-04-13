@@ -1,0 +1,23 @@
+server:
+  port: 8082
+  context-path: /
+
+# In application.yml
+spring:
+  ai:
+    zhipuai:
+      api-key: ${ZHIPUAI_API_KEY}
+# Skill 配置
+agent:
+  # 技能目录路径（支持 classpath: 或 file: 前缀）
+  skills:
+    dirs: classpath:/.claude/skills
+# agent.skills.dirs=classpath:/.claude/skills
+  # 是否启用 ShellTools（执行辅助脚本，默认 false）
+  shell-tools-enabled: true
+  # 是否启用 FileSystemTools（读取参考文件，默认 true）
+  filesystem-tools-enabled: true
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
