@@ -5,10 +5,11 @@ server:
 spring:
     application:
         name: ai
+ali:
     ai:
-        openai:
-            api-key: ${OPENAI_API_KEY}
-            base-url: https://dashscope.aliyuncs.com/compatible-mode
-            chat:
-                options:
-                    model: qwen3.6-plus-2026-04-02
+        qwen:
+            api-key: ${QWEN_API_KEY:your-qwen-api-key-here}
+            model: qwen-plus
+        zhipuai:
+            api-key: ${ZHIPUAI_API_KEY:your-zhipuai-api-key-here}
+            model: glm-4
