@@ -5,11 +5,6 @@ server:
 spring:
     application:
         name: ai
-ali:
     ai:
-        qwen:
-            api-key: ${QWEN_API_KEY:your-qwen-api-key-here}
-            model: qwen-plus
-        zhipuai:
-            api-key: ${ZHIPUAI_API_KEY:your-zhipuai-api-key-here}
-            model: glm-4
+        dashscope:
+            api-key: ${OPENAI_API_KEY}
