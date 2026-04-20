@@ -6,20 +6,5 @@ spring:
     application:
         name: ai
     ai:
-        openai:
+        dashscope:
             api-key: ${OPENAI_API_KEY}
-            base-url: https://dashscope.aliyuncs.com/compatible-mode
-            chat:
-                options:
-                    model: qwen-plus
-        # 向量数据库配置
-        vectorstore:
-            redis:
-                initialize-schema: true
-                index-name: vectorstore
-                prefix: 'kcnf:'
-    data:
-        redis:
-            host: 192.168.0.102
-            port: 6379
-            db: 0
